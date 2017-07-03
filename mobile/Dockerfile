@@ -12,4 +12,4 @@ echo "Asia/Shanghai" >> /etc/timezone; \
 
 
 # docker build -t centos:mobile .
-# docker run -it -v /Users/issuser/Desktop/zhangxd/projects/travel/code:/home/code -p 8100:8100 --name ionic centos:mobile bash
+# docker run -it -v /Users/issuser/Desktop/zhangxd/projects/travel/code:/home/code -p 8100:8100 -p 10001:10001 -p 3001:3001 --name ionic centos:mobile bash
