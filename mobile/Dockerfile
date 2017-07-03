@@ -2,7 +2,7 @@ FROM centos:7
 
 RUN curl -sL https://rpm.nodesource.com/setup_6.x | bash -; \
 yum install epel-release; \
-yum -y install nodejs npm zip; \
+yum -y install nodejs npm gulp zip; \
 yum clean all; \
 npm install -g ionic; \
 npm install -g cordova-hot-code-push-cli; \
