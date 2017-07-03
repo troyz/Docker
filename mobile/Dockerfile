@@ -11,5 +11,11 @@ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime; \
 echo "Asia/Shanghai" >> /etc/timezone; \
 
 
+## create image
 # docker build -t centos:mobile .
-# docker run -it -v /Users/issuser/Desktop/zhangxd/projects/travel/code:/home/code -p 8100:8100 -p 10001:10001 -p 3001:3001 --name ionic centos:mobile bash
+
+## run container on osx
+# docker run -it -v /Users/issuser/code:/home/code -p 8100:8100 -p 10001:10001 -p 3001:3001 --name ionic centos:mobile bash
+
+## run container on windows (Please make sure you have assign r+w to `/c/Users/code` for everyone)
+# docker run -it -v /c/Users/code:/home/code -p 8100:8100 -p 10001:10001 -p 3001:3001 --name ionic centos:mobile bash
